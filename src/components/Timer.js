@@ -9,7 +9,7 @@ const Timer = ({ setTimeOut, questionNumber, setQuestionNumber }) => {
             setTimer((prev) => prev - 1);
         }, 1000);
         return () => clearInterval(interval);
-    }, [timer, setTimeOut, setQuestionNumber, questionNumber]);
+    }, [timer, setTimeOut]);
 
     useEffect(() => {
         setTimer(30);
