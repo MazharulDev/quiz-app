@@ -112,6 +112,7 @@ const App = () => {
                 <Timer
                   setTimeOut={setTimeOut}
                   questionNumber={questionNumber}
+                  setQuestionNumber={setQuestionNumber}
                 />
               </div>
             </div>
