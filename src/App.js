@@ -10,88 +10,88 @@ const App = () => {
   const data = [
     {
       id: 1,
-      question: "Rolex is a company that specializes in what type of product?",
+      question: "বাংলাদেশের রাজধানীর নাম কি? ",
       answers: [
         {
-          text: "Phone",
+          text: "ময়মনসিংহ",
           correct: false,
         },
         {
-          text: "Watches",
+          text: "ঢাকা",
           correct: true,
         },
         {
-          text: "Food",
+          text: "বরিশাল",
           correct: false,
         },
         {
-          text: "Cosmetic",
+          text: "খুলনা",
           correct: false,
         },
       ],
     },
     {
       id: 2,
-      question: "When did the website `Facebook` launch?",
+      question: "বাংলাদেশের জাতীয় ফুলের নাম কি? ",
       answers: [
         {
-          text: "2004",
+          text: "শাপলা",
           correct: true,
         },
         {
-          text: "2005",
+          text: "গোলাপ",
           correct: false,
         },
         {
-          text: "2006",
+          text: "জবা",
           correct: false,
         },
         {
-          text: "2007",
+          text: "বেলী",
           correct: false,
         },
       ],
     },
     {
       id: 3,
-      question: "Who played the character of harry potter in movie?",
+      question: "বাংলাদেশের জাতীয় মাছের নাম কি? ",
       answers: [
         {
-          text: "Johnny Deep",
+          text: "কাতল",
           correct: false,
         },
         {
-          text: "Leonardo Di Caprio",
+          text: "তিমি",
           correct: false,
         },
         {
-          text: "Denzel Washington",
+          text: "চিংড়ি",
           correct: false,
         },
         {
-          text: "Daniel Red Cliff",
+          text: "ইলিশ",
           correct: true,
         },
       ],
     },
     {
       id: 4,
-      question: "What capital of Bangladesh",
+      question: "৫ আর ৫ যোগ করলে কত হবে? ",
       answers: [
         {
-          text: "Cittogong",
+          text: "২০",
           correct: false,
         },
         {
-          text: "Rajshahi",
+          text: "১৭",
           correct: false,
         },
         {
-          text: "Dhaka",
+          text: "১০",
           correct: true,
         },
         {
-          text: "Mymensight",
+          text: "৯",
           correct: false,
         },
       ],
@@ -104,7 +104,7 @@ const App = () => {
     <div className="app">
       <div className="main">
         {timeOut ? (
-          <h1 className="endText">Your currect question is: {count}</h1>
+          <h1 className="endText">তোমার {count} টি উত্তর সঠিক হয়েছে</h1>
         ) : (
           <>
             <div className="top">
