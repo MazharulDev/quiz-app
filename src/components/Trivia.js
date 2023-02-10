@@ -31,19 +31,19 @@ const Trivia = ({
     const handleClick = (a) => {
         setSelectedAnswer(a);
         setClassName("answer active");
-        delay(3000, () => {
+        delay(100, () => {
             setClassName(a.correct ? "answer correct" : "answer wrong");
         });
 
-        delay(5000, () => {
+        delay(100, () => {
             if (a.correct) {
-                delay(1000, () => {
+                delay(50, () => {
                     setCount(count + 1)
                     setQuestionNumber((prev) => prev + 1);
                     setSelectedAnswer(null);
                 });
             } else {
-                delay(1000, () => {
+                delay(50, () => {
                     setQuestionNumber((prev) => prev + 1);
                     setSelectedAnswer(null)
 
