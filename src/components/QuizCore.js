@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Trivia = ({
+const QuizCore = ({
     data,
     questionNumber,
     setQuestionNumber,
@@ -52,7 +52,7 @@ const Trivia = ({
         })
     };
     return (
-        <div className="trivia">
+        <div className="quiz">
             <div className="question">{question?.question}</div>
             <div className="answers">
                 {question?.answers.map((a) => (
@@ -68,4 +68,4 @@ const Trivia = ({
     );
 };
 
-export default Trivia;
+export default QuizCore;

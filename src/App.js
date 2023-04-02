@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Timer from "./components/Timer";
-import Trivia from "./components/Trivia";
+import QuizCore from "./components/QuizCore";
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -117,7 +117,7 @@ const App = () => {
               </div>
             </div>
             <div className="bottom">
-              <Trivia
+              <QuizCore
                 data={data}
                 questionNumber={questionNumber}
                 setQuestionNumber={setQuestionNumber}
